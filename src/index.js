@@ -16,6 +16,8 @@ for(let i = 0; i < 30; i++) {
 }
 
 const tree = new TwoWayTreeD3('#app', {
+  contentWidth: window.innerWidth,
+  contentHeight: window.innerHeight,
   treesData: data,
   onNodeClick: (d) => {
     alert(d.data.name)
